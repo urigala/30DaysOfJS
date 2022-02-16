@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Key events: Press any key</h1>
+    <p></p>
+    <h4></h4>
+
+    <script>
+        let para = document.querySelector('p')
+        let head = document.querySelector('h4')
+        document.body.addEventListener('keypress', e => {
+            let string = `you pressed ${e.key}`
+            para.textContent = string
+            head.textContent = e.keyCode
+      })
+    </script>
+  </body>
+</html>

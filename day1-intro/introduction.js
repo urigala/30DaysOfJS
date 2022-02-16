@@ -1,0 +1,1 @@
+console.log('welcome to thirthy days of js from an external script')
